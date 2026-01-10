@@ -1,8 +1,6 @@
 import random
 char='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()-_+={}[]|\\;:"<>,./?'
 length=int(input("Enter password length:"))
-password=""
-
-for a in range(length):
-    password=random.choice(char)
-    print(password)
+password = ''.join(random.choice(char) for i in range(length))
+print("Generate password", password)
+    
