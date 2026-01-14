@@ -1,5 +1,4 @@
 import random
-
 while True:
     choice = input('Rock, Paper or Scissors (r/p/s) (q to quit): ').lower()
     if choice == 'q':
